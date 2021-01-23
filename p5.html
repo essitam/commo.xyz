@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let commo;
+      function setup(){
+        createCanvas(windowWidth, windowHeight, WEBGL);
+        commo = loadImage('assets/como.mmm.2.png')
+      }
+
+      function draw(){
+        background(255);
+        // translate(mouseX)
+        noStroke();
+        texture(commo);
+        push();
+        shearX(millis() / 5000);
+
+
+         plane(500, 1000);
+         pop();
+        ellipse(mouseX-width/2, mouseY-height/2, 100, 100);
+        // image(commo, 100, 100)
+      }
+    </script>
+
+  </body>
+</html>

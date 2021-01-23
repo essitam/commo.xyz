@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+        <style media="screen">
+      .box {
+        width: 50px;
+        padding: 50px;
+        background-color: red;
+      }
+      .active{
+        background-color:blue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+
+    <div class="box a">
+a
+    </div>
+    <br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br>
+    <div class="box b">
+b
+    </div>  <br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br>
+    <div class="box c">
+c
+    </div>
+      </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br>
+    <script type="text/javascript">
+      gsap.registerPlugin(ScrollTrigger);
+
+//defaults
+      ScrollTrigger.defaults({
+        toggleActions: "restart paude resume none",
+        markers: true
+      });
+//callback
+      ScrollTrigger.create({
+        trigger: ".b",
+        start: "top center",
+        end: "+=100",
+        markers: true,
+        pinSpacing: false,
+        onEnter: () => console.log('enter'),
+        onLeave: () => console.log('leave'),
+        onEnterBack: () => console.log('enterback'),
+        onLeaveBack: () => console.log('leaveback'),
+        onUpdate: (self) => console.log('update', self.progress.toFixed(3)),
+        onToggle: (self) => console.log('toggled', self.isActive),
+        toggleClass: "active",
+        //add an id
+        id: "my-id",
+        pin: true,
+        //scroller : is viewport so you can change if you have a container
+        scroller: ".container"
+        //by default it's vertical but if you want it to look for horizontal:
+        // horizontal: true
+      });
+
+      // let trigger = ScrollTrigger.getById("my-id");
+
+//scrolltriggercreate
+            // ScrollTrigger.create({
+            //   trigger: ".b",
+            //   start: "top top",
+            //   end: "+=1300",
+            //   markers: true,
+            //   pinSpacing: false,
+            //   pin: true
+            // });
+
+//timeline
+      let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".c",
+            start: "top center",
+            markers: true,
+            // toggleActions: "restart pause reverse pause",
+            // endTrigger:".c",
+            end: "top 100px",
+            scrub: 3
+          },
+
+      });
+
+      tl.to(".c", {
+        x: 400,
+         //bottom of element hits top of viewport
+         // relative prefix +=
+         ease: "none",
+         rotation: 360,
+         duration: 3
+      });
+
+
+//one way
+      gsap.to(".c", {
+        scrollTrigger: {
+          trigger: ".c",
+          //top center bottom or pixels percentages (relative to the top)
+          //top of the viewport hits the center
+          start: "top center",
+          markers: true,
+          //toggle Actions:
+          //play pause resume reverse restart reset complete none
+          //1 bring into view
+          //2 past view port
+          //3 when it comes back in
+          //4 scroll all the way back past the start (improves performance)
+          toggleActions: "restart pause reverse pause",
+          endTrigger:".c",
+          end: "bottom 80%",
+          //true = trigger , or a class
+          //adds the end as padding
+           // pinspacing false makes things overlap
+          pin: ".b",
+          //scrub: true or false or a number
+          scrub: 1
+        },
+        x: 400,
+        //bottom of element hits top of viewport
+        // relative prefix +=
+        ease: "none",
+        rotation: 360,
+        duration: 3
+      });
+
+
+    </script>
+
+  </body>
+</html>
