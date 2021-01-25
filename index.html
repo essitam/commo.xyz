@@ -5,7 +5,7 @@
     <title></title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
   </head>
-  <body>
+  <body onclick='window.location.href="issue01.html"'>
     <script type="text/javascript">
       let commo;
       function setup(){
@@ -19,7 +19,7 @@
         noStroke();
         texture(commo);
         push();
-        shearX(millis() / 5000);
+        shearX(millis() / 20000);
 
 
          plane(500, 1000);
@@ -27,6 +27,8 @@
         ellipse(mouseX-width/2, mouseY-height/2, 100, 100);
         // image(commo, 100, 100)
       }
+      function mouseClicked() {
+}
     </script>
 
   </body>
