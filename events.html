@@ -3,11 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
   </head>
   <body>
     EVENTS
     <br>
     Stay tuned!
+    <script type="text/javascript" src="p5.3D-master/p5.3D.js"></script>
 
+    <script type="text/javascript">
+
+    function setup() {
+  createCanvas(710, 400, WEBGL);
+  size = width / 200 // Size of each cube making up the letters
+	res = 50 // Number of pixels per character
+
+	oldString = "HELLO";
+	newString = "";
+	fonts = ["Georgia", "Times New Roman", "Helvetica", "Verdana", "Arial", "Courier New", "Trebuchet MS"];
+	styles = ["bold", "normal", "bold italic", "italic", ];
+	indexF = 0; // Current font
+	indexS = 0; // Current style
+	bevelled = true;
+
+	genWord();
+
+}
+
+function draw() {
+  background(250);
+  normalMaterial();
+	noStroke()
+
+	word.show()
+  translate(-240, -100, 0);
+  normalMaterial();
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  plane(70);
+  pop();
+
+  translate(240, 0, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  box(70, 70, 70);
+  pop();
+
+  translate(240, 0, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  cylinder(70, 70);
+  pop();
+
+  translate(-240 * 2, 200, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  cone(70, 70);
+  pop();
+
+  translate(240, 0, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  torus(70, 20);
+  pop();
+
+  translate(240, 0, 0);
+  push();
+  rotateZ(frameCount * 0.01);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  sphere(70);
+  pop();
+}
+function genWord() {
+	var font = fonts[indexF];
+	var style = styles[indexS];
+	var string = oldString;
+	word = new Word3D(string,6,size,res,bevelled,font,style)
+}
+
+    </script>
   </body>
 </html>

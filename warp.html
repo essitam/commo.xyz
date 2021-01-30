@@ -10,17 +10,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/PixiPlugin.min.js"></script>
     <style media="screen">
       svg{
-        margin-left: 35%;
+        /* margin-left: 35%; */
+
+      }
+      div{
+          background-color: 'blue';
       }
     </style>
   </head>
   <body>
     <div id="box">
-    <svg class="mysvg" width="500" height="600" viewBox="0 0 600 200">
+    <svg class="mysvg" width="700" height="800" viewBox="0 0 600 200">
         <defs>
             <filter id="turb">
-                <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.03" numOctaves="1"
-                    result="turbulence_3" data-filterId="3" />
+                <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="4"  result="turbulence_3" data-filterId="3" />
                 <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="40" />
             </filter>
         </defs>
@@ -28,8 +31,8 @@
     </svg>
     </div>
     <script type="text/javascript">
-      gsap.to("#turbwave" , 8, {
-        attr:{"baseFrequency":"0.01 0.01"},
+      gsap.to("#turbwave" , 10, {
+        attr:{"baseFrequency":"0.000001"},
         repeat:-1,
         yoyo:true
       });

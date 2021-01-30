@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.7/pixi.min.js" integrity="sha512-k8E2ILMRTO1YBnA2dvTDfsZs7f07gazZDQYbsv2NCxnM9hYFwCKu+rWISm8/fFB1I/gi0tgnURcXJVR7GlE0BA==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.6.0/pixi.min.js" integrity="sha512-Xuxi4TLy7zjGnoAuv99f76gpcqxIU0qEG97hW0H0POT8fLT+IosrI8eB0++zB/VMPzQDrO+gHhXxwc0to7V6Tw==" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/pixi.js-legacy@5.3.7/dist/pixi-legacy.js"></script> -->
+    <SCRIPT TYPE="text/javascript" SRC="https://cdn.jsdelivr.net/npm/pixi.js-legacy@5.3.7/dist/pixi-legacy.min.js"></SCRIPT>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/PixiPlugin.min.js"></script>
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <script id="shaderFrag" type="x-shader/x-vertex">
+
+        precision mediump float;
+        varying vec2 vTextureCoord;
+
+        uniform sampler2D uSampler;
+        uniform float time;
+        uniform float frequency;
+        uniform float amplitude;
+        uniform float amplitudeY;
+        uniform float speed;
+
+        void main() {
+          vec2 position = vTextureCoord;
+          float distortion = sin(position.y * frequency + time * speed) * amplitude;
+          float distortion2 = sin(position.y * frequency + time * speed) * amplitudeY;
+          gl_FragColor = texture2D(uSampler, vec2(position.x + distortion, position.y + distortion2));
+        }
+
+      </script>
+    <script type="text/javascript">
+      // register the plugin
+      gsap.registerPlugin(PixiPlugin);
+
+      // give the plugin a reference to the PIXI object
+      PixiPlugin.registerPIXI(PIXI);
+      var shaderFrag = document.querySelector("#shaderFrag").textContent;
+
+      var app = new PIXI.Application({
+        view: document.querySelector("#view"),
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+
+      var filter = new PIXI.Filter(null, shaderFrag);
+      filter.uniforms.frequency = 0.0;
+      filter.uniforms.amplitude = 0.0005;
+      filter.uniforms.amplitudeY = 0.0;
+      filter.uniforms.speed = 2.0;
+      filter.uniforms.time = 0.0;
+
+      var sprite = PIXI.Sprite.from('assets/como.mmm.2.png');
+      sprite.filters = [filter];
+      app.stage.addChild(sprite);
+
+      TweenMax.to(filter.uniforms, 5, {
+        frequency: 30,
+        amplitude: 0.0009,
+        amplitudeY: 0.007,
+        ease: Sine.easeInOut,
+        repeat: -1,
+        repeatDelay: 1,
+        yoyo: true
+      });
+
+      app.ticker.add(function(delta) {
+        filter.uniforms.time += 0.05 * delta;
+      });
+
+      //
+      // var app = new PIXI.Application({
+      //   view: document.querySelector("#view"),
+      //   width: window.innerWidth,
+      //   height: window.innerHeight,
+      //   backgroundColor: 0x000000,
+      //   antialias: true
+      // });
+      // // var texture = PIXI.Texture.from('chairshark.png');
+      //
+      // var sprite = new PIXI.Sprite.from('assets/como.mmm.2.png');
+      //
+      // sprite.width = window.innerWidth;
+      // sprite.height = window.innerHeight;
+      // app.stage.addChild(sprite);
+      //
+      // var displacementSprite = new PIXI.Sprite.from('cloud2.png');
+      // var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite);
+      // displacementSprite.texture.baseTexture.wrapMode - PIXI.WRAP_MODES.REPPEAT;
+      // app.stage.addChild(displacementSprite);
+      // app.stage.filters = [displacementFilter];
+      // displacementSprite.scale.x=4;
+      // displacementSprite.scale.y=4;
+      //
+      // // animate();
+      // // function animate(){
+      // //   displacementSprite.x += 8;
+      // //   displacementSprite.y += 3;
+      // //   requestAnimationFrame(animate);
+      // // }
+      // // //   TweenMax.to(image, 2, { pixi: { colorMatrixFilter: filter } });
+      // // //
+      // // var tl = new TimelineMax({ repeat: -1, yoyo: true })
+      // //   .to(displacementSprite, 1, { pixi: {x: '+= 8'}})
+      // //   .to(displacementSprite, 1, { pixi: {y: '+= 3' }});
+      //
+      // var tl = new TimelineMax({ repeat: -1, yoyo: true })
+      //   .to(sprite, 1, { pixi: { tint: "#ff0" }})
+      //   .to(sprite, 1, { pixi: { tint: 0x2196F3 }})
+      //   .to(sprite, 1, { pixi: { tint: "hsl(180, 90%, 60%)" }})
+      //   .to(sprite, 1, { pixi: { tint: "rgb(236, 64, 122)" }});
+      //
+      // //   var filter = new PIXI.filters.ColorMatrixFilter();
+      // //   filter.sepia();
+      // //   TweenMax.to(image, 2, { pixi: { colorMatrixFilter: filter } });
+      //
+
+    </script>
+
+  </body>
+</html>

@@ -1,12 +1,26 @@
-body, html{
-  font-family: monospace;
-  font-size: 20px;
-  background-image: linear-gradient(#d9e8c1,#d9e8bc);
-}
-div{
-  width: 500px;
-  /* text-align: center; */
+@font-face {
+			font-family: 'AUTHENTICSans';
+			src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+			url('AUTHENTIC-Sans.woff') format('woff'),
+			url('AUTHENTIC-Sans.otf') format('otf')
+			}
 
-  text-align:justify;
-text-justify:inter-word;
-}
+			body {
+			font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+			font-size: 36pt;
+			line-height: 1.1em;
+			}
+
+
+    body, html{
+      /* color: #0f54fb; */
+      color: #0726c5;
+      /* background-image: linear-gradient(#d9e8c1,#d9e8bc); */
+    }
+    div{
+      width: 500px;
+      /* text-align: center; */
+
+      text-align:justify;
+    text-justify:inter-word;
+    }
