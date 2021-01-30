@@ -29,8 +29,8 @@ function draw() {
   cullShader.setUniform('uSampler', source);
   // cullShader.setUniform('mouse', [mouseX/width, mouseY/height]);
   cullShader.setUniform('time', millis()/1000);
-  cullShader.setUniform('amplitude', 0.02 + Math.max(0, 0.0001*Math.sin(0.001*millis())));
-  cullShader.setUniform('amplitudeY', Math.max(0, 0.0001*Math.sin(0.001*millis())));
+  cullShader.setUniform('amplitude', 0.02 + Math.max(0, 0.02*Math.sin(0.001*millis())));
+  cullShader.setUniform('amplitudeY', Math.max(0, 0.01*Math.sin(0.001*millis())));
   cullShader.setUniform('frequency', 10 + 2 * Math.sin(0.0007*millis()));
   cullShader.setUniform('speed', 1.0);
 
