@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js" integrity="sha512-XI02ivhfmEfnk8CEEnJ92ZS6hOqWoWMKF6pxF/tC/DXBVxDXgs2Kmlc9CHA0Aw2dX03nrr8vF54Z6Mqlkuabkw==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- <canvas id="app"></canvas> -->
+    <script type="text/javascript">
+    var scene = new THREE.Scene();
+    		var loader = new THREE.TextureLoader();
+    		loader.load(
+    			"someimage.jpg",
+    			(function ( texture ) {
+    				var imageWidth = texture.image.width;
+    				var imageHeight = texture.image.height;
+    				var width = 700,
+    					height = width*imageHeight/imageWidth,
+    					halfHeight = height/2;
+
+				var camera = new THREE.PerspectiveCamera(45, imageWidth / imageHeight, 0.001, 1000);
+				camera.position.z = halfHeight / Math.tan(Math.PI / 8);
+
+				const vertexShader = `
+					varying vec3 vNormal;
+					varying vec2 vUv;
+					void main() {
+						vNormal = normal;
+						vUv =  uv ;
+						gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+					}
+				`
+				const fragmentShader = `
+					varying vec3 vNormal;
+					varying vec2 vUv;
+					uniform vec3 color;
+					uniform sampler2D texture;
+					void main() {
+						vec3 light = vec3( 0.5, 0.2, 1.0 );
+						light = normalize( light );
+						float dProd = dot( vNormal, light ) * 0.5 + 0.5;
+						vec4 tcolor = texture2D( texture, vUv );
+						vec4 couleur = vec4( tcolor.r , tcolor.g , tcolor.b, 1.0 );
+						gl_FragColor = couleur * vec4( vec3( dProd ) * vec3( color ), 1.0 ) ;
+					}
+				`
+
+
+				var uniforms = {
+					color: { value: new THREE.Color( 0xffffff ) },
+					texture: { value: texture }
+				};
+
+				var shaderMaterial = new THREE.ShaderMaterial({
+					uniforms: uniforms,
+					vertexShader: vertexShader,
+					fragmentShader: fragmentShader
+				})
+
+				var geometry = new THREE.PlaneBufferGeometry( width, height, 0);
+				var plane = new THREE.Mesh( geometry, shaderMaterial );
+				plane.position.set(0, 0, 0);
+			    scene.add( plane );
+
+				var renderer = new THREE.WebGLRenderer();
+				renderer.setSize( width, height );
+				renderer.render(scene, camera);
+				container.appendChild( renderer.domElement );
+			// })
+
+    </script>
+  </body>
+</html>
