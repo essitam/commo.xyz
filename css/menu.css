@@ -49,10 +49,12 @@
 
 a:link, a:visited {
  color: #0726c5;
+ text-decoration: none;
+ /* text-shadow: 2px 2px #5a6b4a; */
 
- text-decoration-style: wavy;
- text-shadow: 2px 2px #8fc507;
-
+}
+a:hover{
+  color:#5a6b4a;
 }
 .wi{
  width: 100px;
