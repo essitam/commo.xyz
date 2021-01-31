@@ -9,6 +9,7 @@
 			font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
 			font-size: 36pt;
 			line-height: 1.1em;
+			  margin: 0;
 			}
 
 
@@ -17,10 +18,9 @@
       color: #0726c5;
       /* background-image: linear-gradient(#d9e8c1,#d9e8bc); */
     }
-    div{
-      width: 500px;
+
+
       /* text-align: center; */
 
-      text-align:justify;
-    text-justify:inter-word;
-    }
+      /* text-align:justify; */
+    /* text-justify:inter-word; */
