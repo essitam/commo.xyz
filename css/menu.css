@@ -1,0 +1,59 @@
+#mainbtn {
+  position:absolute;
+  top:15px;
+  left:15px;
+  z-index:2;
+}
+
+.circle-container {
+	position: absolute;
+ top:-50px;
+ left:-47px;
+	width: 100px;
+	height: 100px;
+  z-index:0;
+}
+.circle-container a {
+	display: block;
+	/* overflow: hidden; */
+	position: absolute;
+	width: 32px; height: 32px;
+  margin:50px;
+}
+/* .circle-container i { display: block; width: 100px; } */
+.deg0 { transform: rotate(-25deg) translate(5.75em) rotate(-0deg);   -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;}
+.deg30 { transform: rotate(-25deg) translate(5.75em) rotate(-30deg);  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+.deg60 { transform: rotate(-25deg) translate(5.75em) rotate(-60deg);  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+.deg90 { transform: rotate(-25deg) translate(6em) rotate(-90deg);  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+
+/* .fa-home:hover {color:tan;}
+.fa-cog:hover {color:gray;}
+.fa-comments:hover {color:teal;}
+.fa-heart:hover {color:red;} */
+
+.open.deg0 { transform: rotate(0deg) translate(5.75em) rotate(-0deg); }
+.open.deg30 { transform: rotate(30deg) translate(5.75em) rotate(-30deg); }
+.open.deg60 { transform: rotate(60deg) translate(5.75em) rotate(-60deg); }
+.open.deg90 { transform: rotate(90deg) translate(6em) rotate(-90deg);
+}
+
+a:link, a:visited {
+ color: #0726c5;
+
+ text-decoration-style: wavy;
+ text-shadow: 2px 2px #8fc507;
+
+}
+.wi{
+ width: 100px;
+}

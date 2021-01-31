@@ -4,11 +4,50 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/index.css">
+    <style media="screen">
+    @font-face {
+          font-family: 'AUTHENTICSans';
+          src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+          url('AUTHENTIC-Sans.woff') format('woff'),
+          url('AUTHENTIC-Sans.otf') format('otf')
+          }
+
+          body {
+          font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+          font-size: 36pt;
+          line-height: 1.1em;
+          }
+          h1{
+            text-align: center;
+          }
+    </style>
   </head>
   <body>
-    EVENTS
+
+    <div id="container" class="hvr-grow">
+        <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
+          <svg height="200" width="200">
+        <circle cx="0" cy="0" r="160" fill="#d5e3c8"/>
+      </svg>
+          </div>
+    </div>
+
+    <div class='circle-container'>
+    	<a href='about.html' class='deg0 wi '>about</a>
+    	<a href='events.html' class='deg30 wi'>events</a>
+      <a href='submit.html' class='deg60 wi'>submit</a>
+    	<a href='archive.html' class='deg90 wi'>archive</a>
+    </div>
+  <h1>EVENTS</h1>
     <br>
     Stay tuned!
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./js/menu.js"></script>
     <script type="text/javascript" src="p5.3D-master/p5.3D.js"></script>
 
     <script type="text/javascript">
