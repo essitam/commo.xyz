@@ -18,7 +18,11 @@
       color: #0726c5;
       /* background-image: linear-gradient(#d9e8c1,#d9e8bc); */
     }
-
+		#backg{
+			position: absolute;
+			top:0;
+			z-index: -9999;
+		}
 
       /* text-align: center; */
 
