@@ -5,7 +5,7 @@ var fr = 30; //frame rate for the animation, max 60
 function preload(){
   // load the shader
   cullShader = loadShader('moire/uniform.vert', 'moire/uniform.frag');
-  source = loadImage('../../assets/como.mmm.2.png');
+  source = loadImage('../../assets/commoflipped.png');
 }
 
 function setup() {

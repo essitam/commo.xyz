@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-feature-settings: "kern" 1, "liga" 1, "frac" 1, "lnum" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  visibility: hidden;
+}
+
+.svg-char {
+  width: 500px;
+  height: 500px;
+}
+
+.txt {
+  position: absolute;
+  left: -10000px;
+  font-size: 16px;
+}
+
+.gsap-3-logo {
+  width: 20vw;
+  max-width: 150px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+/*  ==========================================================
+	Collection Linl
+	========================================================== */
+.collection {
+  position: fixed;
+  z-index: 1000;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collection__link {
+  position: relative;
+  margin-bottom: 16px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+.collection__link span {
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  width: 10%;
+  background-color: white;
+  content: "";
+  transition: width 0.3s;
+}
+.collection__link:hover span {
+  width: 100%;
+}

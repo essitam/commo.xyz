@@ -27,6 +27,9 @@
 .deg30 { transform: rotate(-25deg) translate(5.75em) rotate(-30deg);  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
+  .deg45 {  width: 300px; transform: rotate(-45deg) translate(5.75em) rotate(-15deg);  -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
 .deg60 { transform: rotate(-25deg) translate(5.75em) rotate(-60deg);  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
@@ -43,6 +46,7 @@
 
 .open.deg0 { transform: rotate(0deg) translate(5.75em) rotate(-0deg); }
 .open.deg30 { transform: rotate(30deg) translate(5.75em) rotate(-30deg); }
+.open.deg45 { width: 300px; transform: rotate(45deg) translate(5.75em) rotate(-45deg); }
 .open.deg60 { transform: rotate(60deg) translate(5.75em) rotate(-60deg); }
 .open.deg90 { transform: rotate(90deg) translate(6em) rotate(-90deg);
 }
@@ -57,5 +61,5 @@ a:hover{
   color:#5a6b4a;
 }
 .wi{
- width: 100px;
+ width: 1600px;
 }
