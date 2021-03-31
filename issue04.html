@@ -6,6 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -22,7 +23,6 @@
           /* font-size: 36pt; */
           /* line-height: 1.1em; */
           }
-
           h1{
             text-align: center;
           }
@@ -35,22 +35,29 @@
           height: 100vh;
         }
       }
-      .cover-image{
-          position:fixed;
-          top:0;
-          width:  50%;
-         object-fit:cover;
-         z-index:9;
-         /* margin-left: 20%; */
-         /* z-index:-999; */
+      .leftside{
+        position:fixed;
+        background-color: red;
+      }
+      .imgissue{
+        position:fixed;
+        /* width:50vh; */
+        height:100vh;
+        /* height:100%; */
+        /* background-color:red; */
+        background-image: url('assets/creatureee.jpg');
+        /* background-size: 50% 100%; */
+        background-size:contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        /* background-position: center; */
       }
       .rightside{
-        /* background-color:orange; */
-        margin-left: 20px;
+        background-color:orange;
       }
       .panel {
       	width: 100%;
-        min-height: 100%;
+        /* height: 100%; */
         display: flex;
         justify-content: center;
         line-height: 1em;
@@ -62,57 +69,37 @@
         position: relative;
         box-sizing: border-box;
         padding: 10px;
-        margin-bottom: 100px;
-
-        /* overflow-y:scroll; */
+        overflow-y:scroll;
       }
       .orange{
         background-color: white;
         /* background-image: linear-gradient(to left, #d5e3c8, white) */
       }
+      @font-face {
+            font-family: 'AUTHENTICSans';
+            src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+            url('AUTHENTIC-Sans.woff') format('woff'),
+            url('AUTHENTIC-Sans.otf') format('otf')
+            }
 
-            .dots{
-              position: fixed;
-              right:0;
-              top:12%;
-              z-index: 10000;
+            body {
+            font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+            font-size: 36pt;
+            line-height: 1.1em;
             }
-            .dot {
 
-              /* width: 50px;
-              height: 50px;
-              background-color: white; */
-              border: none;
-              height: 13px;
-              width: 13px;
-              background-color: #758600;
-              border-radius: 50%;
-              /* display: inline-block; */
-            }
-            .intro{
-               padding: 10px;
-               text-align: justify;
-              background-color: #a4b33b;
-            }
-            .intronav{
-              align-items: center;  justify-content: center;
-            }
-            .official-menu-zone{
-                position:fixed;
-                z-index:100;
-            }
     </style>
 
   </head>
   <body>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <script  src="js/menu.js"></script>
+      <script  src="./js/menu.js"></script>
 
 
     <div class="row g-0">
            <div class="col-md-6 g-0">
               <div class="leftside">
-                <div class="official-menu-zone">
+                <!-- <img class="imgissue" src='assets/creatureee.jpg' alt=""> -->
                 <div id="container" class="hvr-grow">
                     <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
                       <svg height="200" width="200">
@@ -127,43 +114,18 @@
                   <a href='archive.html' class='deg60 wi'>archive</a>
                   <a href='issue01.html' class='deg90 wi'>current issue</a>
                 </div>
-
-              </div>
-                <nav class="dots">
-
-                  <button class="dot" id="section1Btn"></button><br>
-                  <button class="dot" id="section2Btn"></button><br>
-                  <button class="dot" id="section3Btn"></button><br>
-                  <button class="dot" id="section4Btn"></button><br>
-                  <button class="dot" id="section5Btn"></button><br>
-                  <button class="dot" id="section6Btn"></button><br>
-                </nav>
-                <img class="cover-image" src='assets/creatureee.jpg' alt="">
-                <!-- <button class="dot" id="section1Btn"><img width="30px" src="assets/oo.png" alt=""></button><br>
-                <button class="dot" id="section2Btn"><img width="30px" src="assets/ooo.png" alt=""></button><br>
-                <button class="dot" id="section3Btn"><img width="30px" src="assets/oooo.png" alt=""></button><br>
-                <button class="dot" id="section4Btn"><img width="30px" src="assets/ooooo.png" alt=""></button><br>
-                <button class="dot" id="section5Btn"><img width="30px" src="assets/oooooo.png" alt=""></button><br>
-                <button class="dot" id="section6Btn"><img width="30px" src="assets/ooooooo.png" alt=""></button><br> -->
+                <a href="#onewriting">heiiii</a>
+                <a href="#twowriting">heiiii</a>
+                <a href="#threewriting">heiiii</a>
+                <a href="#fourwriting">heiiii</a>
                 <!-- <img src="assets/como.mmm.2.png" width="100px" alt=""> -->
-
               </div>
             </div>
             <div class="col-md-6 g-0 ">
               <div class="rightside">
-                  <section class="panel orange" id="section0">
-                    <nav class="intronav">
-                      <br><br><br><br>
-                      welcome to the very first issue called
-                      <h1>issue 01</h1>
-                      <div class="intro" id="section1Btn"> first article by article guy</div><br>
-                      <div class="intro " id="section2Btn">second poem by poem person</div><br>
-                      <div class="intro" id="section3Btn">another written thingie by another writer</div>
-                    </nav>
-                  </section>
-                  <section class="panel orange" id="section1">
-                    <div class="">
-                    <h1>one writing</h1>by writer one
+                  <section class="panel orange" id="onewriting">
+
+                    <h1>one writing</h1>
                     <div class="">
                     <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
@@ -175,11 +137,12 @@
                     Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
                     <br><br>
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+
                   </div>
-                </div>
+
                   </section>
-                  <section class="panel orange" id="section2">
-                    <div class="">
+                  <section class="panel orange" id="twowriting">
+
                   	<h1>two writing</h1>
                     <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
@@ -201,10 +164,11 @@
                     Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
                     <br><br>
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
-                  </div>
+
+
+
                   </section>
-                  <section class="panel orange" id="section3">
-                    <div class="">
+                  <section class="panel orange" id="threewriting">
                     <h1>three writing</h1>
                     <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
@@ -216,11 +180,9 @@
                     Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
                     <br><br>
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
-                                        </div>
-                  </section>
-                  <section class="panel orange" id="section4">
-                    <div class="">
 
+                  </section>
+                  <section class="panel orange" id="fourwriting">
                     <h1>four writing</h1>
                     <br><br>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
@@ -232,20 +194,13 @@
                     Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
                     <br><br>
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
-                  </div>
-                  </section>
-                  <section class="panel orange" id="section5">
-                    etc
-                  </section>
-                  <section class="panel orange" id="section6">
-                    etc
+
                   </section>
               </div>
           </div>
       </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js'></script>
       <script type="text/javascript">
-      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+      gsap.registerPlugin(ScrollTrigger);
 
       let sections = gsap.utils.toArray(".panel");
 
@@ -253,33 +208,21 @@
         ScrollTrigger.create({
           trigger: eachPanel,
           start: "top top",
-          // pin: true,
-          // pinSpacing: false,
-          //
-          // scrub: 3
-          // snap: {
-          //   snapTo: 1,
-          //   duration: { min: 0.3, max: 0.7 },
-          //   ease: "power2.inOut",
-          //   anticipatePin: 0.2,
-          //   delay: 0
-          // },
-          // marker:true
+          pin: true,
+          pinSpacing: false,
+
+          scrub: 3,
+          snap: {
+            snapTo: 1,
+            duration: { min: 0.3, max: 0.7 },
+            ease: "power2.inOut",
+            anticipatePin: 0.2,
+            delay: 0
+          },
+          marker:true
 
         });
       });
-
-      document.querySelectorAll("nav button").forEach((btn, index) => {
-          btn.addEventListener("click", () => {
-            gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
-          });
-        });
-
-        document.querySelectorAll(".intro").forEach((btn, index) => {
-            btn.addEventListener("click", () => {
-              gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
-            });
-          });
         // gsap.registerPlugin(ScrollTrigger);
         //
         // gsap.utils.toArray(".panel").forEach((panel, i) => {

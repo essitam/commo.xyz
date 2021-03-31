@@ -23,7 +23,9 @@
 			top:0;
 			z-index: -9999;
 		}
-
+		.page-content{
+			padding: 70px;
+		}
       /* text-align: center; */
 
       /* text-align:justify; */

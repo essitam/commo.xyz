@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" />
+    <style media="screen">
+    @font-face {
+          font-family: 'AUTHENTICSans';
+          src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+          url('AUTHENTIC-Sans.woff') format('woff'),
+          url('AUTHENTIC-Sans.otf') format('otf')
+          }
+          body {
+          font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+          /* font-size: 36pt; */
+          /* line-height: 1.1em; */
+          }
+          h1{
+            text-align: center;
+          }
+      .leftside, .rightside {
+        height: 50vh;
+        width:100%;
+      }
+      @media screen and (min-width:768px){
+        .leftside, .rightside{
+          height: 100vh;
+        }
+      }
+      .leftside{
+        position:fixed;
+        background-color: red;
+      }
+      .imgissue{
+        position:fixed;
+        /* width:50vh; */
+        height:100vh;
+        /* height:100%; */
+        /* background-color:red; */
+        background-image: url('assets/creatureee.jpg');
+        /* background-size: 50% 100%; */
+        background-size:contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        /* background-position: center; */
+      }
+      .rightside{
+        background-color:orange;
+      }
+      .panel {
+      	width: 100%;
+        height: 100%;
+        /* display: flex; */
+        justify-content: center;
+        line-height: 1em;
+        /* align-items: center; */
+        /* font-weight: 600; */
+        /* font-size: 1.5em; */
+        font-size: 18px;
+        /* text-align: center; */
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        /* overflow:auto; */
+      }
+      .orange{
+        background-color: white;
+        /* background-image: linear-gradient(to left, #d5e3c8, white) */
+      }
+      @font-face {
+            font-family: 'AUTHENTICSans';
+            src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+            url('AUTHENTIC-Sans.woff') format('woff'),
+            url('AUTHENTIC-Sans.otf') format('otf')
+            }
+
+            body {
+            font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+            font-size: 36pt;
+            line-height: 1.1em;
+            }
+            .line {
+              width: 100%;
+              max-width: 800px;
+              height: 8px;
+              margin: 0 0 10px 0;
+              position: relative;
+              display: inline-block;
+              background-color: rgba(255,255,255,1);
+            }
+
+
+            /* Not great browser support :(
+            html {
+              scroll-behavior: smooth;
+            }
+            */
+            nav {
+              position: fixed;
+              top: 10px;
+
+              background: black;
+              padding: 0px 10px;
+            }
+            nav a {
+              color: white;
+              font-size: 1.3em;
+              line-height: 1.7;
+              text-decoration: none;
+            }
+            nav a:hover {
+              text-decoration: underline;
+            }
+    </style>
+
+  </head>
+  <body>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="./js/menu.js"></script>
+
+
+    <div class="row g-0">
+           <div class="col-md-6 g-0">
+              <div class="leftside">
+                <!-- <img class="imgissue" src='assets/creatureee.jpg' alt=""> -->
+                <div id="container" class="hvr-grow">
+                    <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
+                      <svg height="200" width="200">
+                    <circle cx="0" cy="0" r="160" fill="#d5e3c8"/>
+                  </svg>
+                      </div>
+                </div>
+                <div class='circle-container'>
+                  <a href='about.html' class='deg0 wi '>about</a>
+                  <a href='events.html' class='deg30 wi'>events</a>
+                  <a href='submit.html' class='deg45 wi'>submit</a>
+                  <a href='archive.html' class='deg60 wi'>archive</a>
+                  <a href='issue01.html' class='deg90 wi'>current issue</a>
+                </div>
+
+                <!-- <img src="assets/como.mmm.2.png" width="100px" alt=""> -->
+              </div>
+              <nav>
+                <div><a href="#one">Section one</a></div>
+                <div><a href="#two">Section two</a></div>
+                <div><a href="#three">Section three</a></div>
+                <div><a href="#four">Section four</a></div>
+                <div><a href="#five">Section five</a></div>
+              </nav>
+
+            </div>
+            <div class="col-md-6 g-0 ">
+              <div class="rightside">
+                <section id="two" class="panel red">
+                  <p><span class="line line-1"></span>This line's animation will begin when it enters the viewport and finish when its top edge hits the top of the viewport, staying perfectly in sync with the scrollbar because it has <code>scrub:&nbsp;true</code></p>
+                </section>
+
+
+                <section id="three" class="panel orange">
+                  <p><span class="line line-2"></span>This orange panel gets pinned when its top edge hits the top of the viewport, then the line's animation is linked with the scroll position until it has traveled 100% of the viewport's height (<code>end: "+=100%"</code>), then the orange panel is unpinned and normal scrolling resumes. Padding is added automatically to push the rest of the content down so that it catches up with the scroll when it unpins. You can set <code>pinSpacing: false</code> to prevent that if you prefer.</p>
+                </section>
+
+
+                <section id="four" class="panel purple">
+                  <p><span class="line line-3"></span>This panel gets pinned in a similar way, and has a more involved animation that's wrapped in a timeline, fading the background color and animating the transforms of the paragraph in addition to the line, all synced with the scroll position perfectly.</p>
+                </section>
+
+
+
+              <section id="five" class="panel gray">
+                DONE!
+              </section>
+              </div>
+          </div>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js'></script>
+      <script type="text/javascript">
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+      // --- RED PANEL ---
+      gsap.from(".line-1", {
+        scrollTrigger: {
+          trigger: ".line-1",
+          scrub: true,
+          start: "top bottom",
+          end: "top top"
+        },
+        scaleX: 0,
+        transformOrigin: "left center",
+        ease: "none"
+      });
+
+
+      // --- ORANGE PANEL ---
+      gsap.from(".line-2", {
+        scrollTrigger: {
+          trigger: ".orange",
+          scrub: true,
+          pin: true,
+          start: "top top",
+          end: "+=100%"
+        },
+        scaleX: 0,
+        transformOrigin: "left center",
+        ease: "none"
+      });
+
+
+      // --- PURPLE/GREEN PANEL ---
+      var tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".purple",
+            scrub: true,
+            pin: true,
+            start: "top top",
+            end: "+=100%"
+          }
+        });
+
+      tl.from(".purple p", {scale: 0.3, rotation:45, autoAlpha: 0, ease: "power2"})
+        .from(".line-3", {scaleX: 0, transformOrigin: "left center", ease: "none"}, 0)
+        .to(".purple", {backgroundColor: "#28a92b"}, 0);
+
+      gsap.utils.toArray("nav a").forEach(function(a) {
+        a.addEventListener("click", function(e) {
+          e.preventDefault();
+          gsap.to(window, {duration: 1, scrollTo: e.target.getAttribute("href")});
+        });
+      });
+
+
+
+
+
+
+      // possible solution for old iOS bugs that don't display things inside an iframe correctly. Create a --full-height CSS variable and use it instead of height: 100%
+      // function readHeight() {
+      // 		if (ScrollTrigger.isScrolling()) {
+      // 			console.log("wait until end...");
+      // 			ScrollTrigger.addEventListener("scrollEnd", readHeight);
+      // 		} else {
+      // 			ScrollTrigger.removeEventListener("scrollEnd", readHeight);
+      // 			window.removeEventListener("resize", readHeight);
+      // 			let scrollFunc = ScrollTrigger.getScrollFunc(window),
+      // 				scrollProgress = scrollFunc() / ScrollTrigger.maxScroll(window),
+      // 				docStyle = document.documentElement.style,
+      // 				bodyStyle = document.body.style;
+      // 			bodyStyle.overflow = "auto";
+      // 			docStyle.setProperty("--full-height", "100%");
+      // 			docStyle.setProperty("--full-height", window.innerHeight + "px");
+      // 			bodyStyle.overflow = "unset";
+      // 			setTimeout(function() {
+      // 				window.addEventListener("resize", readHeight);
+      // 			}, 500);
+      // 			ScrollTrigger.refresh(true);
+      // 			scrollFunc(scrollProgress * ScrollTrigger.maxScroll(window));
+      // 		}
+      // 	}
+        // gsap.registerPlugin(ScrollTrigger);
+        //
+        // gsap.utils.toArray(".panel").forEach((panel, i) => {
+        //   ScrollTrigger.create({
+        //     trigger: panel,
+        //     start: "top top",
+        //     pin: true,
+        //     pinSpacing: false
+        //   });
+        // });
+        //
+        //
+        // ScrollTrigger.create({
+        //   snap: 1 / 4 // snap whole page to the closest section!
+        // });
+
+        // function fulltex() {
+        //   var bgw = document.getElementsByClassName("rightside");
+        //   bgw[0].style.height = "50vh";
+        // }
+
+      </script>
+
+  </body>
+</html>

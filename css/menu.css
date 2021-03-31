@@ -11,7 +11,7 @@
  left:-47px;
 	width: 100px;
 	height: 100px;
-  z-index:0;
+  z-index:100;
 }
 .circle-container a {
 	display: block;
@@ -21,19 +21,23 @@
   margin:50px;
 }
 /* .circle-container i { display: block; width: 100px; } */
-.deg0 { transform: rotate(-25deg) translate(5.75em) rotate(-0deg);   -webkit-transition: all 0.5s ease-out;
+.deg0 { transform: rotate(-25deg) translate(5.75em) rotate(-18deg);   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;}
-.deg30 { transform: rotate(-25deg) translate(5.75em) rotate(-30deg);  -webkit-transition: all 0.5s ease-out;
+.deg30 { transform: rotate(-25deg) translate(5.75em) rotate(-10deg);  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-  .deg45 {  width: 300px; transform: rotate(-45deg) translate(5.75em) rotate(-15deg);  -webkit-transition: all 0.5s ease-out;
+  .deg45 { width: 300px;
+    transform: rotate(-25deg) translate(5.75em) rotate(-36deg);  -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-.deg60 { transform: rotate(-25deg) translate(5.75em) rotate(-60deg);  -webkit-transition: all 0.5s ease-out;
+  /* .deg45 {  width: 300px; transform: rotate(-45deg) translate(5.75em) rotate(-15deg);  -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; } */
+.deg60 { transform: rotate(-25deg) translate(5.75em) rotate(-54deg);  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
-.deg90 { transform: rotate(-25deg) translate(6em) rotate(-90deg);  -webkit-transition: all 0.5s ease-out;
+.deg90 { width: 350px; transform: rotate(-25deg) translate(6em) rotate(-72deg);  -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -45,10 +49,10 @@
 .fa-heart:hover {color:red;} */
 
 .open.deg0 { transform: rotate(0deg) translate(5.75em) rotate(-0deg); }
-.open.deg30 { transform: rotate(30deg) translate(5.75em) rotate(-30deg); }
-.open.deg45 { width: 300px; transform: rotate(45deg) translate(5.75em) rotate(-45deg); }
-.open.deg60 { transform: rotate(60deg) translate(5.75em) rotate(-60deg); }
-.open.deg90 { transform: rotate(90deg) translate(6em) rotate(-90deg);
+.open.deg30 { transform: rotate(18deg) translate(5.75em) rotate(-18deg); }
+.open.deg45 { transform: rotate(36deg) translate(5.75em) rotate(-36deg); }
+.open.deg60 { transform: rotate(54deg) translate(5.75em) rotate(-54deg); }
+.open.deg90 { width: 300px; transform: rotate(90deg) translate(6em) rotate(-90deg);
 }
 
 a:link, a:visited {

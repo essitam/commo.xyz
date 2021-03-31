@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/pages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="css/index.css">
@@ -32,6 +33,7 @@
     <div id="backg">
 
     </div>
+    <div class="official-menu-zone">
     <div id="container" class="hvr-grow">
         <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
           <svg height="200" width="200">
@@ -41,16 +43,43 @@
     </div>
 
     <div class='circle-container'>
-    	<a href='about.html' class='deg0 wi '>about</a>
+      <a href='about.html' class='deg0 wi '>about</a>
     	<a href='events.html' class='deg30 wi'>events</a>
-      <a href='submit.html' class='deg60 wi'>submit</a>
-    	<a href='archive.html' class='deg90 wi'>archive</a>
+      <a href='submit.html' class='deg45 wi'>submit</a>
+      <a href='archive.html' class='deg60 wi'>archive</a>
+    	<a href='issue01.html' class='deg90 wi'>current issue</a>
     </div>
-  <h1>EVENTS</h1>
-    <br>
-    Stay tuned!
+  </div>
+    <div class="segment">
+      <svg width="100%" height="100%" viewBox="-20 0 557 190" id="svg">
+        <!-- <circle cx="100" cy="100" r="3" />
+        <circle cx="300" cy="20" r="3" /> -->
+        <path id="path" d="M20.629,36.732 C27.618,17.731 17.819,65.59 90.84,64.59 165.812,64.59 218.376,98.931 244.394,126.946 277.391,160.937 146.092,214.116 195.11,214.116 282.103,214.116 511.745,99.089 518.745,76.089"/>
+        <g id="rect">
+          <defs>
+              <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(244, 244, 244);
+                stop-opacity:0" />
+                <stop offset="100%" style="stop-color:rgb(59, 80, 20);stop-opacity:1" />
+              </radialGradient>
+            </defs>
+            <ellipse width="85" height="30" cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+          <!-- <rect width="85" height="30" fill="#3b5014" />
+          <text x="10" y="19" font-size="14">SUBMIT</text> -->
+        </g>
+      </svg>
+    </div>
+    <div class="seg page-content">
+      <h1>EVENTS</h1>
+        <br>
+        Stay tuned!
+    </div>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="./js/menu.js"></script>
     <script type="text/javascript" src="js/p5-background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/MotionPathPlugin.min.js"> </script>
+    <script type="text/javascript" src="js/motion.js"></script>
 </body>
 </html>
