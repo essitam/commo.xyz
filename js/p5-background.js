@@ -5,7 +5,7 @@ function setup(){
 function draw(){
 
   // noStroke();
-  stroke(90, 107, 74);
-  fill(213, 227, 200)
+  fill(214, 202, 40);
+  stroke(253, 243, 76);
   triangle(mouseX, mouseY, 58, 20, 86, 75);
 }

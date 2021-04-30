@@ -28,26 +28,45 @@
           }
       .leftside, .rightside {
         height: 50vh;
-        width:100%;
+        /* width:100vw; */
+
       }
       @media screen and (min-width:768px){
         .leftside, .rightside{
           height: 100vh;
         }
+        .cover-image{
+            position:fixed;
+        }
       }
       .cover-image{
-          position:fixed;
+        height:100%;
           top:0;
           width:  50%;
          object-fit:cover;
          z-index:9;
+         align-content: center;
          /* margin-left: 20%; */
          /* z-index:-999; */
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+          /* position: fixed; /* or absolute */ */
+          /* top: 50%;
+          left: 50%; */
+        /* left: 50%;
+         top: 50%;*/
+         /* transform: translate(-50%, 0); */
       }
       .rightside{
         /* background-color:orange; */
         margin-left: 20px;
       }
+      .leftside{
+          /* position: fixed; */
+      }
+
       .panel {
       	width: 100%;
         min-height: 100%;
@@ -61,10 +80,16 @@
         /* text-align: center; */
         position: relative;
         box-sizing: border-box;
-        padding: 10px;
+        /* padding: 10px; */
         margin-bottom: 100px;
 
         /* overflow-y:scroll; */
+      }
+      .fixxx{
+        /* position: fixed; */
+
+        align-items: center;
+  justify-content: center
       }
       .orange{
         background-color: white;
@@ -116,7 +141,7 @@
                 <div id="container" class="hvr-grow">
                     <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
                       <svg height="200" width="200">
-                    <circle cx="0" cy="0" r="160" fill="#d5e3c8"/>
+                    <circle cx="0" cy="0" r="160" fill="#9fbe21"/>
                   </svg>
                       </div>
                 </div>
@@ -138,7 +163,10 @@
                   <button class="dot" id="section5Btn"></button><br>
                   <button class="dot" id="section6Btn"></button><br>
                 </nav>
-                <img class="cover-image" src='assets/creatureee.jpg' alt="">
+                <div class="fixxx">
+                  <img class="cover-image" src='assets/creatureee.jpg' alt="">
+                </div>
+
                 <!-- <button class="dot" id="section1Btn"><img width="30px" src="assets/oo.png" alt=""></button><br>
                 <button class="dot" id="section2Btn"><img width="30px" src="assets/ooo.png" alt=""></button><br>
                 <button class="dot" id="section3Btn"><img width="30px" src="assets/oooo.png" alt=""></button><br>

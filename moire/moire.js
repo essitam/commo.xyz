@@ -11,7 +11,7 @@ function preload(){
 function setup() {
   frameRate(fr);
   // shaders require WEBGL mode to work
-  let cnv = createCanvas(windowWidth/2, windowWidth/2, WEBGL);
+  let cnv = createCanvas(windowWidth, windowHeight, WEBGL);
   cnv.parent('myContainer');
   noStroke();
 }
@@ -37,7 +37,7 @@ function draw() {
   shader(cullShader);
 
   // rect gives us some geometry on the screen
-  rect(0,0,windowWidth/2, windowWidth/2);
+  rect(0,0,windowWidth, windowWidth);
 }
 
 function windowResized(){

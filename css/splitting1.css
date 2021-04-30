@@ -1,0 +1,16 @@
+
+.spiral .char {
+  animation: slide-in 3s cubic-bezier(.5, 0, .5, 1) both infinite alternate;
+  animation-delay: calc(60ms * var(--char-index));
+  color:#9d9000;
+  background-color: #675b04;
+  padding: 40px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+    color: #758600;
+    background-color:#3b5014;
+  }
+}

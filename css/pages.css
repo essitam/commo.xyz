@@ -7,8 +7,8 @@ svg {
 
 path {
   fill: none;
-  stroke-width: 2;
-  stroke: #758600;
+  /* stroke-width: 2; */
+  /* stroke: #758600; */
 }
  .segment{
   position: fixed;
@@ -19,9 +19,14 @@ path {
 }
 .seg{
   position: absolute;
-    width: 100%;
+  width: 100%;
   z-index: 1;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  /* margin: auto; */
+
+  /* text-align: center; */
+  overflow: auto;
+  padding-bottom: 30px;
 }
 #backg{
   position: fixed;
@@ -32,4 +37,9 @@ path {
 .official-menu-zone{
     position:fixed;
     z-index:100;
+}
+.page-content{
+  margin-top:200px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
