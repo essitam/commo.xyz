@@ -1,0 +1,18 @@
+
+.spiral .char {
+  animation: slide-in 7s cubic-bezier(.5, 0, .5, 1) both infinite alternate;
+  animation-delay: calc(60ms * var(--char-index));
+  color: #ffffff;
+  background-color:#0726c5;
+  background-clip: padding-box;
+}
+
+
+@keyframes slide-in {
+  from {
+    /* transform: translateY(-1em) rotate(-.5turn) scale(0.5); */
+    color: #0726c5;
+    background-color: #ffffff;
+    background-clip: padding-box;
+  }
+}

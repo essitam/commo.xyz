@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <style media="screen">
+
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+          }
+
+          svg {
+            overflow: visible;
+            height: 100%;
+
+            /* Fix Safari rendering bug */
+            transform: translateZ(0);
+          }
+
+          path {
+            fill: none;
+            stroke-width: 2;
+            stroke: #758600;
+          }
+
+
+
+
+        </style>
+  </head>
+  <body>
+
+    <svg width="100%" height="100%" viewBox="-20 0 557 190" id="svg">
+    	<!-- <circle cx="100" cy="100" r="3" />
+    	<circle cx="300" cy="20" r="3" /> -->
+    	<path id="path" d="M19.705,90.842 C19.705,90.842 22.868,12.951 54.267,-10.565 84.255,-33.061 98.478,67.106 110.076,67.106 143.926,67.106 202.124,35.915 221.624,52.685 244.713,72.532 175.579,130.898 196.966,153.892 221.044,179.775 313.632,97.955 362.565,97.955 384.792,97.955 432.545,124.444 447.766,119.845 475.734,111.395 500.537,141.917 511.109,128.102 525.454,109.342 515.185,65.342 515.185,65.342"/>
+    	<g id="rect">
+    		<rect width="85" height="30" fill="#3b5014" />
+    		<text x="10" y="19" font-size="14">SVG &lt;rect&gt;</text>
+    	</g>
+    </svg>
+
+<div id="div">#div</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/MotionPathPlugin.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script type="text/javascript">
+      //register the plugin (just once)
+      gsap.registerPlugin(MotionPathPlugin);
+
+      gsap.to("#rect", {
+        duration: 5,
+        repeat: 12,
+        repeatDelay: 3,
+        yoyo: true,
+        ease: "power1.inOut",
+        motionPath:{
+          path: "#path",
+          align: "#path",
+          autoRotate: true,
+          alignOrigin: [0.5, 0.5]
+        }
+      });
+    </script>
+  </body>
+</html>

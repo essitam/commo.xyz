@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" />
+
+    <title>commo</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <style media="screen">
+    @font-face {
+          font-family: 'AUTHENTICSans';
+          src: url('AUTHENTIC-Sans.woff2') format('woff2'),
+          url('AUTHENTIC-Sans.woff') format('woff'),
+          url('AUTHENTIC-Sans.otf') format('otf')
+          }
+
+          body {
+          font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
+          font-size: 24pt;
+          line-height: 1.1em;
+          }
+          h1{
+            text-align: center;
+          }
+
+    </style>
+  </head>
+  <body>
+  <div class="official-menu-zone">
+    <div id="container" class="hvr-grow">
+        <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
+          <svg height="200" width="200">
+        <circle cx="0" cy="0" r="160" fill="#9fbe21"/>
+      </svg>
+          </div>
+    </div>
+
+    <div class='circle-container'>
+      <a href='about.html' class='deg0 wi '>about</a>
+    	<a href='events.html' class='deg30 wi'>events</a>
+      <a href='submit.html' class='deg45 wi'>submit</a>
+      <a href='archive.html' class='deg60 wi'>archive</a>
+    	<a href='issue01.html' class='deg90 wi'>current issue</a>
+    </div>
+  </div>
+    <div class="segment">
+      <svg width="100%"  viewBox="-20 0 557 190" id="svg">
+        <!-- <circle cx="100" cy="100" r="3" />
+        <circle cx="300" cy="20" r="3" /> -->
+        <path id="path" d="M453.058,10.991 C460.051,-8.004 310.874,76.698 383.886,75.698 458.875,75.698 342.901,152.064 368.906,180.068 401.906,214.064 383.069,142.439 432.069,142.439 519.069,142.439 511.745,99.089 518.745,76.089"/>
+        <g id="rect">
+          <defs>
+              <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(157, 144, 0);
+                stop-opacity:0" />
+                <stop offset="100%" style="stop-color:rgb(117, 134, 0);stop-opacity:1" />
+              </radialGradient>
+            </defs>
+            <ellipse width="85" height="30" cx="90%" cy="50%" rx="42" ry="23" fill="url(#grad1)" />
+        </g>
+      </svg>
+    </div>
+    <div class="seg">
+      <div class="page-content">
+        <h1>PAST ISSUES</h1>
+        <div class="">
+          <a href="./issue01.html">Summer 2021</a>
+        </div>
+      </div>
+    </div>
+    <div id="backg">
+
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="./js/menu.js"></script>
+    <script type="text/javascript" src="js/p5-background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/MotionPathPlugin.min.js"> </script>
+    <script type="text/javascript" src="js/motion2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.4.9/Tone.min.js" type="text/javascript"></script>
+    <title>3-2 Uniform Textures in Shaders</title>
+  </head>
+  <body>
+
+    <button id="startContext" onClick="startTone()">start</button>
+
+    <script type="text/javascript">
+
+        //******************************************* FILE LINKS *********************************************//
+    		//PASTE AUDIO FILE PATH HERE vvvvv
+        const audioPath = "https://cdn.glitch.com/56bd83dd-cb42-4607-9eef-7f6e0bca98c0%2Fa%20long%20walk%20to%20somewhere%20close%20errlymixx.mp3?v=1590432744616";
+        //******************************************* FILE LINKS *********************************************//
+
+
+        //******************************************* IMAGE VARIABLES ****************************************//
+        // high values demand more cpu and could crash the browser
+
+        var windowSize = 16; //fft size. //Values must be a power of two between 16 to 2048, i.e. 16, 32, 64, 128, 256, 512, 1024, 2048
+        //higher numbers give a cool grainy effect
+
+        var fftClock = 500; //the frequency that program takes fft band amplitudes, in bpm
+        var smoothing = 0.3; //smoothing for the amplitude follower, measured in seconds
+        //******************************************* IMAGE VARIABLES ****************************************//
+
+
+        var level = 0;
+        var hold = false;
+        var bins = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        var fftData;
+        var samprate = 44100;
+        var binWidth = (samprate/(2*windowSize));
+
+        var follower = new Tone.Follower(smoothing);
+        var meter = new Tone.Meter();
+        var gain = new Tone.Gain(4.0);
+        var fft = new Tone.FFT(windowSize);
+
+    		var player = new Tone.Player({
+    			"url" : audioPath,
+    			"loop" : true
+    		}).fan(gain, Tone.Master);
+
+        follower.connect(meter);
+        gain.connect(fft);
+        gain.connect(follower);
+
+        function repeat(time) {
+          var dBfs = meter.getLevel();
+          level = Math.pow(10, dBfs/20);
+          fftData = fft.getValue();
+          for(let i=0; i<windowSize; i++) {
+            bins[i] = Math.pow(10, fftData[i]/20) * binWidth * (i+1) * 0.01;
+          }
+          // console.log(bins);
+        }
+
+        Tone.Transport.scheduleRepeat(time => {
+          repeat(time);
+        }, "8n");
+        Tone.Transport.bpm.value = fftClock;
+        Tone.Transport.start();
+
+        function startTone() {
+          player.start();
+        }
+
+    	</script>
+
+      <script src="fft-smoothflip/fft-smoothflip.js"></script>
+
+  </body>
+</html>
