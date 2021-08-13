@@ -19,18 +19,14 @@
           }
           body {
           font-family: "AUTHENTICSans", "AUTHENTICSans-Regular", "Arial", sans-serif;
-          /* font-size: 36pt; */
-          /* line-height: 1.1em; */
           }
 
-          h1{
+          h1 {
             text-align: center;
           }
-
         .leftside, .rightside{
           height: 100vh;
         }
-
       .cover-image{
         height:100vh;
         max-width: 100%;
@@ -42,13 +38,6 @@
         margin-left: auto;
         margin-right: auto;
       }
-      .rightside{
-
-      }
-      .leftside{
-
-      }
-
       .panel {
       	width: 100%;
         min-height: 100%;
@@ -57,7 +46,6 @@
         line-height: 1em;
         align-items: center;
         font-size: 18px;
-
         position: relative;
         box-sizing: border-box;
         padding: 10%;
@@ -69,26 +57,22 @@
       }
       .orange{
         background-color: white;
-        /* background-image: linear-gradient(to left, #d5e3c8, white) */
       }
-
       .dots{
+        text-align: right;
         position: fixed;
         right:0;
         top:12%;
         z-index: 10000;
+        font-size: 12px;
+        width: 10%;
       }
       .dot {
-
-        /* width: 50px;
-        height: 50px;
-        background-color: white; */
         border: none;
         height: 13px;
         width: 13px;
         background-color: #758600;
         border-radius: 50%;
-        /* display: inline-block; */
       }
       .intro{
          padding: 10px;
@@ -106,30 +90,34 @@
 
   </head>
   <body>
+<!-- JAVASCRIPT FOR PAGE -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script  src="js/menu.js"></script>
 
-
+<!-- BEGINNING of PAGE -->
     <div class="row g-0">
+          <!-- LEFTSIDE BEGIN -->
            <div class=" g-0">
               <div class="leftside">
+                <!-- BEGINNING of MENU -->
                 <div class="official-menu-zone">
-                <div id="container" class="hvr-grow">
-                    <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
-                      <svg height="200" width="200">
-                    <circle cx="0" cy="0" r="160" fill="#9fbe21"/>
-                  </svg>
+                  <div id="container" class="hvr-grow">
+                      <div id="corner"><a href="#"><img id="mainbtn" class="fa fa-bars fa-2x fa-inverse" src="assets/como-logo.png" width="100px"></a>
+                        <svg height="200" width="200">
+                          <circle cx="0" cy="0" r="160" fill="#9fbe21"/>
+                        </svg>
                       </div>
-                </div>
-                <div class='circle-container'>
-                  <a href='about.html' class='deg0 wi '>about</a>
-                  <a href='events.html' class='deg30 wi'>events</a>
-                  <a href='submit.html' class='deg45 wi'>submit</a>
-                  <a href='archive.html' class='deg60 wi'>archive</a>
-                  <a href='issue01.html' class='deg90 wi'>current issue</a>
+                  </div>
+                  <div class='circle-container'>
+                    <a href='about.html' class='deg0 wi '>about</a>
+                    <a href='events.html' class='deg30 wi'>events</a>
+                    <a href='submit.html' class='deg45 wi'>submit</a>
+                    <a href='archive.html' class='deg60 wi'>archive</a>
+                    <a href='issue01.html' class='deg90 wi'>current issue</a>
                 </div>
               </div>
-
+              <!-- END of MENU -->
+                <!-- BEGINNING of NAVIGATION on side -->
                 <nav class="dots">
                   <button class="dot" id="section1Btn"></button><br>
                   <button class="dot" id="section2Btn"></button><br>
@@ -141,20 +129,36 @@
                   <button class="dot" id="section8Btn"></button><br>
                   <button class="dot" id="section9Btn"></button><br>
                   <button class="dot" id="section10Btn"></button><br>
-                  <button class="dot" id="section5Btn"></button><br>
-                  <button class="dot" id="section6Btn"></button><br>
+                  <button class="dot" id="section11Btn"></button><br>
+                  <button class="dot" id="section12Btn"></button><br>
+                  <button class="dot" id="section13Btn"></button><br>
+                  <button class="dot" id="section14Btn"></button><br>
+                  <button class="dot" id="section15Btn"></button><br>
+                  <button class="dot" id="section16Btn"></button><br>
+                  <button class="dot" id="section17Btn"></button><br>
+                  <button class="dot" id="section18Btn"></button><br>
+                  <button class="dot" id="section19Btn"></button><br>
+                  <button class="dot" id="section20Btn"></button><br>
+                  <button class="dot" id="section21Btn"></button><br>
+                  <button class="dot" id="section22Btn"></button><br>
+                  <button class="dot" id="section0Btn"></button><br>
                 </nav>
 
+
+                <!-- END of NAVIGATION on side -->
+                <!-- BEGINNING of IMAGE -->
                 <div class="fixxx">
                   <img class="cover-image" src='assets/creatureee.jpg' alt="">
                 </div>
-
+                <!-- END OF IMAGE -->
               </div>
             </div>
+            <!-- LEFTSIDE END -->
 
+            <!-- RIGHTSIDE BEGIN -->
             <div class="g-0">
               <div class="rightside">
-
+                <!-- BEGINNING of LIST of NAMES -->
                   <section class="panel orange" id="section0">
                     <nav class="intronav">
                       <br><br><br><br>
@@ -162,122 +166,481 @@
                       <h1>issue 01</h1>
                       <div class="intro" id="section1Btn"> first article by article guy</div><br>
                       <div class="intro " id="section2Btn">second poem by poem person</div><br>
-                      <div class="intro" id="section3Btn">another written thingie by another writer</div>
+                      <div class="intro" id="section3Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section4Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section5Btn">second poem by poem person</div><br>
+                      <div class="intro" id="section6Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section7Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section8Btn">second poem by poem person</div><br>
+                      <div class="intro" id="section9Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section10Btn"> first article by article guy</div><br>
+                      <div class="intro" id="section11Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section12Btn">second poem by poem person</div><br>
+                      <div class="intro" id="section13Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section14Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section15Btn">second poem by poem person</div><br>
+                      <div class="intro" id="section16Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section17Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section18Btn">second poem by poem person</div><br>
+                      <div class="intro" id="section19Btn">another written thingie by another writer</div><br>
+                      <div class="intro" id="section20Btn"> first article by article guy</div><br>
+                      <div class="intro" id="section21Btn"> first article by article guy</div><br>
+                      <div class="intro " id="section22Btn">second poem by poem person</div><br>
+
                     </nav>
                   </section>
-
-                  <section class="panel orange" id="section1">
-                    <div class="">
-                    <h1>one writing</h1>by writer one
-                    <div class="">
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                    <br><br>
-                    Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                    <br><br>
-                    In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                    <br><br>
-                    Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                    <br><br>
-                    Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                <!-- END of LIST of NAMES -->
+                <!-- BEGINNING of WRITING -->
+                <section class="panel orange" id="section1">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
                   </div>
-                </div>
-                  </section>
-
-                  <section class="panel orange" id="section2">
-                    <div class="">
-                  	<h1>two writing</h1>
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                    <br><br>
-                    Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                    <br><br>
-                    In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                    <br><br>
-                    Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                    <br><br>
-                    Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                    <br><br>
-                    Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                    <br><br>
-                    In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                    <br><br>
-                    Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                    <br><br>
-                    Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                </section>
+                <section class="panel orange" id="section2">
+                  <div>
+                      <h1>
+                          two writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
                   </div>
-                  </section>
-
-                  <section class="panel orange" id="section3">
-                    <div class="">
-                    <h1>three writing</h1>
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                    <br><br>
-                    Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                    <br><br>
-                    In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                    <br><br>
-                    Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                    <br><br>
-                    Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
-                                        </div>
-                  </section>
-
-                  <section class="panel orange" id="section4">
-                    <div class="">
-                      <h1>four writing</h1>
-                      <br><br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                      <br><br>
-                      Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                      <br><br>
-                      In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                      <br><br>
-                      Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                      <br><br>
-                      Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                </section>
+                <section class="panel orange" id="section3">
+                  <div>
+                      <h1>
+                          3 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
                   </div>
-                  </section>
-                  <section class="panel orange" id="section5">
-                    etc
-                  </section>
-                  <section class="panel orange" id="section6">
-                    etc
-                  </section>
+                </section>
+                <section class="panel orange" id="section4">
+                  <div>
+                      <h1>
+                          4 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section5">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section6">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section7">
+                  <div>
+                      <h1>
+                          7 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section8">
+                  <div>
+                      <h1>
+                          8 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section9">
+                  <div>
+                      <h1>
+                          9 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section10">
+                  <div>
+                      <h1>
+                          10 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section11">
+                  <div>
+                      <h1>
+                          11 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section12">
+                  <div>
+                      <h1>
+                          12 writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section13">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section14">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section15">
+                  <div>
+                      <h1>
+                          one writing15
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section16">
+                  <div>
+                      <h1>
+                          one writing
+                      </h1>16
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section17">
+                  <div>
+                      <h1>
+                          one writing17
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section18">
+                  <div>
+                      <h1>
+                          one writing18
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section19">
+                  <div>
+                      <h1>
+                          one writing19
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section20">
+                  <div>
+                      <h1>
+                          one writing20
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section21">
+                  <div>
+                      <h1>
+                          one writing21
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <section class="panel orange" id="section22">
+                  <div>
+                      <h1>
+                          one writing22
+                      </h1>
+                          by writer one
+                      <div>
+                          <br><br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                          <br><br>
+                          Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                          <br><br>
+                          In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                          <br><br>
+                          Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                          <br><br>
+                          Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+                        </div>
+                  </div>
+                </section>
+                <!-- END of WRITING -->
               </div>
           </div>
+          <!-- END of RIGHTSIDE -->
       </div>
+  <!-- END of PAGE -->
+
+  <!-- more javascript -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js'></script>
-      <script type="text/javascript">
-      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-      let sections = gsap.utils.toArray(".panel");
-
-      sections.forEach((eachPanel, index) => {
-        ScrollTrigger.create({
-          trigger: eachPanel,
-          start: "top top",
-
-        });
-      });
-
-      document.querySelectorAll("nav button").forEach((btn, index) => {
-          btn.addEventListener("click", () => {
-            gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
-          });
-        });
-
-        document.querySelectorAll(".intro").forEach((btn, index) => {
-            btn.addEventListener("click", () => {
-              gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
-            });
-          });
-
-
-      </script>
+        <script type="text/javascript" src="js/issue.js"></script>
 
   </body>
 </html>
