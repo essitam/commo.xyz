@@ -26,27 +26,45 @@
           h1{
             text-align: center;
           }
+      .leftside, .rightside {
+        height: 50vh;
+        /* width:100vw; */
 
+      }
+      @media screen and (min-width:768px){
         .leftside, .rightside{
           height: 100vh;
         }
-
+        .cover-image{
+            position:fixed;
+        }
+      }
       .cover-image{
-        height:100vh;
-        max-width: 100%;
-        top:0;
+        height:100%;
+          top:0;
+          width:  50%;
          object-fit:cover;
          z-index:9;
          align-content: center;
+         /* margin-left: 20%; */
+         /* z-index:-999; */
          display: block;
         margin-left: auto;
         margin-right: auto;
+
+          /* position: fixed; /* or absolute */ */
+          /* top: 50%;
+          left: 50%; */
+        /* left: 50%;
+         top: 50%;*/
+         /* transform: translate(-50%, 0); */
       }
       .rightside{
-
+        /* background-color:orange; */
+        margin-left: 20px;
       }
       .leftside{
-
+          /* position: fixed; */
       }
 
       .panel {
@@ -55,53 +73,59 @@
         display: flex;
         justify-content: center;
         line-height: 1em;
-        align-items: center;
+        /* align-items: center; */
+        /* font-weight: 600; */
+        /* font-size: 1.5em; */
         font-size: 18px;
-
+        /* text-align: center; */
         position: relative;
         box-sizing: border-box;
-        padding: 10%;
+        /* padding: 10px; */
         margin-bottom: 100px;
+
+        /* overflow-y:scroll; */
       }
       .fixxx{
+        /* position: fixed; */
+
         align-items: center;
-        justify-content: center
+  justify-content: center
       }
       .orange{
         background-color: white;
         /* background-image: linear-gradient(to left, #d5e3c8, white) */
       }
 
-      .dots{
-        position: fixed;
-        right:0;
-        top:12%;
-        z-index: 10000;
-      }
-      .dot {
+            .dots{
+              position: fixed;
+              right:0;
+              top:12%;
+              z-index: 10000;
+            }
+            .dot {
 
-        /* width: 50px;
-        height: 50px;
-        background-color: white; */
-        border: none;
-        height: 13px;
-        width: 13px;
-        background-color: #758600;
-        border-radius: 50%;
-        /* display: inline-block; */
-      }
-      .intro{
-         padding: 10px;
-         text-align: justify;
-        background-color: #a4b33b;
-      }
-      .intronav{
-        align-items: center;  justify-content: center;
-      }
-      .official-menu-zone{
-          position:fixed;
-          z-index:100;
-      }
+              /* width: 50px;
+              height: 50px;
+              background-color: white; */
+              border: none;
+              height: 13px;
+              width: 13px;
+              background-color: #758600;
+              border-radius: 50%;
+              /* display: inline-block; */
+            }
+            .intro{
+               padding: 10px;
+               text-align: justify;
+              background-color: #a4b33b;
+            }
+            .intronav{
+              align-items: center;  justify-content: center;
+            }
+            .official-menu-zone{
+                position:fixed;
+                z-index:100;
+            }
     </style>
 
   </head>
@@ -111,7 +135,7 @@
 
 
     <div class="row g-0">
-           <div class=" g-0">
+           <div class="col-md-6 g-0">
               <div class="leftside">
                 <div class="official-menu-zone">
                 <div id="container" class="hvr-grow">
@@ -128,33 +152,33 @@
                   <a href='archive.html' class='deg60 wi'>archive</a>
                   <a href='issue01.html' class='deg90 wi'>current issue</a>
                 </div>
-              </div>
 
+              </div>
                 <nav class="dots">
+
                   <button class="dot" id="section1Btn"></button><br>
                   <button class="dot" id="section2Btn"></button><br>
                   <button class="dot" id="section3Btn"></button><br>
                   <button class="dot" id="section4Btn"></button><br>
                   <button class="dot" id="section5Btn"></button><br>
                   <button class="dot" id="section6Btn"></button><br>
-                  <button class="dot" id="section7Btn"></button><br>
-                  <button class="dot" id="section8Btn"></button><br>
-                  <button class="dot" id="section9Btn"></button><br>
-                  <button class="dot" id="section10Btn"></button><br>
-                  <button class="dot" id="section5Btn"></button><br>
-                  <button class="dot" id="section6Btn"></button><br>
                 </nav>
-
                 <div class="fixxx">
                   <img class="cover-image" src='assets/creatureee.jpg' alt="">
                 </div>
 
+                <!-- <button class="dot" id="section1Btn"><img width="30px" src="assets/oo.png" alt=""></button><br>
+                <button class="dot" id="section2Btn"><img width="30px" src="assets/ooo.png" alt=""></button><br>
+                <button class="dot" id="section3Btn"><img width="30px" src="assets/oooo.png" alt=""></button><br>
+                <button class="dot" id="section4Btn"><img width="30px" src="assets/ooooo.png" alt=""></button><br>
+                <button class="dot" id="section5Btn"><img width="30px" src="assets/oooooo.png" alt=""></button><br>
+                <button class="dot" id="section6Btn"><img width="30px" src="assets/ooooooo.png" alt=""></button><br> -->
+                <!-- <img src="assets/como.mmm.2.png" width="100px" alt=""> -->
+
               </div>
             </div>
-
-            <div class="g-0">
+            <div class="col-md-6 g-0 ">
               <div class="rightside">
-
                   <section class="panel orange" id="section0">
                     <nav class="intronav">
                       <br><br><br><br>
@@ -165,7 +189,6 @@
                       <div class="intro" id="section3Btn">another written thingie by another writer</div>
                     </nav>
                   </section>
-
                   <section class="panel orange" id="section1">
                     <div class="">
                     <h1>one writing</h1>by writer one
@@ -183,7 +206,6 @@
                   </div>
                 </div>
                   </section>
-
                   <section class="panel orange" id="section2">
                     <div class="">
                   	<h1>two writing</h1>
@@ -209,7 +231,6 @@
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
                   </div>
                   </section>
-
                   <section class="panel orange" id="section3">
                     <div class="">
                     <h1>three writing</h1>
@@ -225,20 +246,20 @@
                     Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
                                         </div>
                   </section>
-
                   <section class="panel orange" id="section4">
                     <div class="">
-                      <h1>four writing</h1>
-                      <br><br>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
-                      <br><br>
-                      Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
-                      <br><br>
-                      In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
-                      <br><br>
-                      Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
-                      <br><br>
-                      Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
+
+                    <h1>four writing</h1>
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non gravida purus. Praesent dignissim nisl id mi imperdiet varius. Pellentesque dignissim et nibh in efficitur. Mauris mauris quam, tincidunt non vehicula sit amet, accumsan ac augue. Aenean luctus sagittis leo, ut tincidunt turpis rutrum in. Cras tempus odio nisl, at eleifend nisl porta ac. Duis vitae purus cursus metus elementum fermentum eget at nunc. Fusce faucibus, ipsum ut elementum molestie, magna diam fringilla massa, quis consectetur nisl neque at massa.
+                    <br><br>
+                    Nulla eleifend ligula ut consectetur sodales. Sed quis lacus et nunc aliquam mattis. Quisque interdum dui vel neque fringilla suscipit. Pellentesque porttitor ultrices neque ut consectetur. Pellentesque facilisis lectus nec lacus sagittis pulvinar quis vitae mi. Cras tincidunt, mauris ut malesuada mattis, odio lacus vehicula nisl, sit amet viverra leo ante sollicitudin ex. Proin id sodales odio.
+                    <br><br>
+                    In ut lorem volutpat, cursus lorem et, varius neque. Integer sed vulputate magna, eu accumsan est. Aenean gravida dolor vel sapien accumsan, nec porta lectus condimentum. Mauris vitae rutrum tortor. Curabitur aliquam sapien et ultrices viverra. Mauris maximus justo pharetra iaculis posuere. Vivamus in mi nec tellus maximus suscipit. Nulla sem odio, eleifend ut metus sed, faucibus convallis odio. Sed vulputate lacus consequat velit suscipit finibus. Quisque luctus ante a magna malesuada lacinia. Vivamus vitae hendrerit lorem, mollis placerat quam.
+                    <br><br>
+                    Morbi scelerisque quis turpis et imperdiet. Quisque faucibus dapibus ipsum, gravida molestie dolor. Ut sodales tellus non erat feugiat, eu facilisis nibh lobortis. Pellentesque ac semper neque. Fusce at odio urna. Vestibulum risus orci, commodo dapibus leo sed, finibus pellentesque risus. Praesent aliquet rhoncus lorem sit amet hendrerit. Aenean consectetur sapien a ante fermentum, nec placerat ex dictum. Aenean eu finibus quam. Aliquam sed mauris et arcu sollicitudin blandit.
+                    <br><br>
+                    Sed eget nibh sodales, finibus ex convallis, molestie lacus. Aliquam eu bibendum dolor. Nulla libero est, aliquam quis tellus accumsan, convallis ullamcorper elit. Duis ultrices tortor eleifend, eleifend erat et, dignissim enim. Phasellus dictum enim non velit porttitor euismod. Sed laoreet lobortis metus sit amet vehicula. Proin eleifend at elit vel interdum. Nullam eu vulputate magna. In ut dolor non quam eleifend pulvinar in in purus.
                   </div>
                   </section>
                   <section class="panel orange" id="section5">
@@ -260,6 +281,18 @@
         ScrollTrigger.create({
           trigger: eachPanel,
           start: "top top",
+          // pin: true,
+          // pinSpacing: false,
+          //
+          // scrub: 3
+          // snap: {
+          //   snapTo: 1,
+          //   duration: { min: 0.3, max: 0.7 },
+          //   ease: "power2.inOut",
+          //   anticipatePin: 0.2,
+          //   delay: 0
+          // },
+          // marker:true
 
         });
       });
@@ -275,7 +308,26 @@
               gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:70}});
             });
           });
+        // gsap.registerPlugin(ScrollTrigger);
+        //
+        // gsap.utils.toArray(".panel").forEach((panel, i) => {
+        //   ScrollTrigger.create({
+        //     trigger: panel,
+        //     start: "top top",
+        //     pin: true,
+        //     pinSpacing: false
+        //   });
+        // });
+        //
+        //
+        // ScrollTrigger.create({
+        //   snap: 1 / 4 // snap whole page to the closest section!
+        // });
 
+        // function fulltex() {
+        //   var bgw = document.getElementsByClassName("rightside");
+        //   bgw[0].style.height = "50vh";
+        // }
 
       </script>
 
